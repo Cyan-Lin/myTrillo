@@ -239,14 +239,6 @@
     }
   }
 
-  &__item:hover {
-    background-color: var(--color-primary);
-  }
-
-  &__item:hover &__link {
-    color: var(--color-grey-light-1);
-  }
-
   &__link:link,
   &__link:visited {
     display: block;
@@ -256,10 +248,20 @@
 
     display: flex;
     align-items: center;
+  }
 
-    &--last {
-      color: var(--color-primary);
-    }
+  &__link--last:link,
+  &__link--last:visited {
+    color: var(--color-primary);
+  }
+
+  &__link:hover {
+    background-color: var(--color-primary);
+    color: var(--color-grey-light-1);
+  }
+
+  &__link:active {
+    background-color: var(--color-primary-light);
   }
 
   &__icon {
@@ -347,7 +349,6 @@
   }
 
   &__item {
-    padding: 1.5rem 2rem;
     transition: all 0.2s;
 
     &:not(:last-child) {
@@ -359,24 +360,27 @@
     }
   }
 
-  &__item:hover {
-    background-color: var(--color-primary);
-  }
-
-  &__item:hover &__link {
-    color: var(--color-grey-light-1);
-  }
-
   &__link:link,
   &__link:visited {
     display: flex;
     align-items: center;
     color: var(--color-grey-dark-1);
     text-decoration: none;
+    padding: 1.5rem 2rem;
+  }
 
-    &--last {
-      color: var(--color-primary);
-    }
+  &__link--last:link,
+  &__link--last:visited {
+    color: var(--color-primary);
+  }
+
+  &__link:hover {
+    background-color: var(--color-primary);
+    color: var(--color-grey-light-1);
+  }
+
+  &__link:active {
+    background-color: var(--color-primary-light);
   }
 
   &__photo {
