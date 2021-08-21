@@ -119,9 +119,9 @@
     padding: 0.75rem 2rem;
     color: var(--color-grey-dark-1);
     text-decoration: none;
-    border-bottom: 1px solid var(--color-grey-light-3);
-
     transition: all 0.3s;
+
+    border-bottom: 1px solid var(--color-grey-light-3);
   }
 
   &__result-link:hover {
@@ -228,8 +228,6 @@
   overflow: hidden;
 
   &__item {
-    transition: all 0.2s;
-
     &:not(:last-child) {
       border-bottom: 1px solid var(--color-grey-light-2);
     }
@@ -349,8 +347,6 @@
   }
 
   &__item {
-    transition: all 0.2s;
-
     &:not(:last-child) {
       border-bottom: 1px solid var(--color-grey-light-2);
     }
